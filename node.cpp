@@ -1,36 +1,33 @@
-#ifndef NODE_CPP
-#define NODE_CPP
-
 #include "node.h"
 
-Node::Node(string pergunta, Node *l, Node *r){
-    string sintoma = pergunta;
-    left = l;
-    right = r;
+using namespace std;
+
+Node::Node(string question){
+    setQuestion(question);
+    setLeft(nullptr);
+    setRight(nullptr);
+} 
+
+string Node::getQuestion(){
+    return question;
 }
 
 Node* Node::getLeft(){
-    return this->left;
+    return left;
 }
 
-void Node::setLeft(Node* newLeft){
-    this->left = newLeft;
+Node* Node::getRight() {
+    return right;
 }
 
-Node* Node::getRight(){
-    return this->right;
+void Node::setQuestion(string question) {
+    this->question = question;
 }
 
-void Node::setRight(Node* newRight){
-    this->right = newRight;
+void Node::setLeft(Node* left) {
+    this->left = left;
 }
 
-string Node::getCode(){
-    return this->code;
+void Node::setRight(Node* right) {
+    this->right = right;
 }
-
-void Node::setCode(string newCode){
-    this->code = newCode;
-}
-
-#endif
