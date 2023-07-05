@@ -15,12 +15,18 @@ int main(){
 
     int TotalDoencas,TotalSintomas;
     string doencas[41];
+    string sintomas[132];
 
     file >> TotalDoencas >> TotalSintomas;
     
     for(int i = 0 ; i < TotalDoencas ; i++){
         file >> doencas[i];
     }
+
+    for(int i = 0 ; i < TotalSintomas ; i++){
+        file >> sintomas[i];
+    }
+
 
     // imprima os inteiros
     cout << "Total de doencas: " << TotalDoencas << endl;
@@ -30,5 +36,8 @@ int main(){
         cout << "Doenca: " << doencas[i] << endl;
     }
     
+    for(int j = 0 ; j < TotalSintomas ; j++){
+        cout << "Sintomas: " << sintomas[j] << endl;
+    }
 
 }
