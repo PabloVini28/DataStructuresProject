@@ -1,39 +1,34 @@
 #include "binaryTree.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int main(){
 
-    // crie uma arvore binaria chamada tree
-    BinaryTree tree;
+    ifstream file("doencas.txt");
 
-    // Construindo a árvore com perguntas
-    tree.insertNode("Tem febre?");
-    tree.insertNode("Tem tosse?");
-    tree.insertNode("Tem dor de cabeça?");
-    tree.insertNode("Tem dor no corpo?");
-    tree.insertNode("Respireiu ar poluído recentemente?");
-    tree.insertNode("Teve contato com alguém doente?");
-    tree.insertNode("Tem dor de garganta?");
-    tree.insertNode("Tem congestão nasal?");
-
-    // Percorrendo a árvore e fazendo perguntas ao usuário
-    Node* NoAtual = tree.getRoot();
-    while (NoAtual != nullptr) {
-        cout << NoAtual->getQuestion() << " (Responda 1 para Sim, 0 para Não): ";
-        int resposta;
-        cin >> resposta;
-
-        if (resposta == 1) {
-        NoAtual =NoAtual->getLeft();
-        } else {
-        NoAtual =NoAtual->getRight();
-        }
+    if(!file.is_open())
+    {
+        cout << "Erro ao abrir o arquivo" << endl;
+        return 0;
     }
 
-    // Imprimindo a doença correspondente quando chega a uma folha
-    string disease =NoAtual->getQuestion();
-    cout << "Você está com a doença: " << disease << endl;
+    int TotalDoencas,TotalSintomas;
+    string doencas[41];
 
-    return 0;
+    file >> TotalDoencas >> TotalSintomas;
+    
+    for(int i = 0 ; i < TotalDoencas ; i++){
+        file >> doencas[i];
+    }
+
+    // imprima os inteiros
+    cout << "Total de doencas: " << TotalDoencas << endl;
+    cout << "Total de sintomas: " << TotalSintomas << endl;
+
+    for(int i = 0 ; i < TotalDoencas ; i++){
+        cout << "Doenca: " << doencas[i] << endl;
+    }
+    
+
 }
