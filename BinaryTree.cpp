@@ -1,4 +1,6 @@
-#include "binarytree.h"
+#ifndef BINARYTREE_CPP
+#define BINARYTREE_CPP
+#include "binaryTree.h"
 #include <iostream>
 
 using namespace std;
@@ -72,4 +74,5 @@ void BinaryTree::destroyTree(Node* node) {
     }
 }
 
+#endif
 // Path: main.cpp
