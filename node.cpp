@@ -1,3 +1,5 @@
+#ifndef NODE_CPP
+#define NODE_CPP
 #include "node.h"
 
 using namespace std;
@@ -31,3 +33,6 @@ void Node::setLeft(Node* left) {
 void Node::setRight(Node* right) {
     this->right = right;
 }
+
+
+#endif  // NODE_CPP
