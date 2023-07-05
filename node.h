@@ -23,6 +23,6 @@ public:
     void setLeft(Node* left);
     void setRight(Node* right);
 };
-#include "node.cpp"
+//#include "node.cpp"
 
 #endif  // NODE_H
