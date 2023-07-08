@@ -12,7 +12,7 @@ using namespace std;
 BinaryTree::BinaryTree(){
   ifstream arquivo("SintomasMenor.txt");
 
-  this->root = new Node(nullptr, nullptr);
+  this->root = new Node(nullptr, nullptr); // Cria a árvore com a raiz setada
 
   if (arquivo.is_open()){
     int num_doencas;
@@ -29,16 +29,19 @@ BinaryTree::BinaryTree(){
     string doencas[num_doencas];
 
     for (int i = 0; i < num_doencas; i++){
-      getline(arquivo, doencas[i]);
+      getline(arquivo, doencas[i]); // Guarda as doenças no vetor do tipo string
     }
 
     for (int i = 0; i < this->num_sintomas; i++){
-      getline(arquivo, this->sintomas[i]);
+      getline(arquivo, this->sintomas[i]); // guarda os sintomas 
     }
 
     while(getline(arquivo, buffer)){
       int id_doenca;
       int indice;
+
+      // Transforma a linha do arquivo que contém as respostas dos sintomas
+      // em uma fila de dados
 
       stringstream ss(buffer);
 
@@ -68,7 +71,7 @@ BinaryTree::BinaryTree(){
           }
         }
       }
-
+      // Após todo o tratamento, o último nó receberá a doença (referente a folha)!
       no_atual->adicionarDoenca(doencas[id_doenca-1]);
     }
     arquivo.close();
@@ -103,6 +106,8 @@ string BinaryTree::realizarConsulta(int sintomas[]){
       no_atual = no_atual->getRight();
     }
   }
+  // Após percorrer, será retornado a string referente a doença
+  // dessa forma finalizando a consulta.
 
   string consulta = "";
   for (string doenca : *no_atual->getDoencas()){
