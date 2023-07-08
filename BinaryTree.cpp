@@ -135,5 +135,3 @@ void BinaryTree::setRoot(Node* root){
 }
 
 #endif
-
-[bina]
