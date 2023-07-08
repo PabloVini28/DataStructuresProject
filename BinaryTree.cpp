@@ -48,6 +48,8 @@ BinaryTree::BinaryTree(){
       for(int i = 0; i < this->num_sintomas; i++){
         ss >> indice;
 
+      // Tratamento das respostas
+
         if (indice == 0){
           if (no_atual->getLeft() == nullptr){
             no_atual->setLeft(new Node(nullptr, nullptr));
@@ -91,6 +93,7 @@ int BinaryTree::getNumeroSintomas(){
 string BinaryTree::realizarConsulta(int sintomas[]){
   Node* no_atual = this->root;
 
+  // Aplicação que percorrerá a árvore de acordo com as respostas
   for(int i = 0; i < this->num_sintomas; i++){
     if (no_atual == nullptr){
       return "";
