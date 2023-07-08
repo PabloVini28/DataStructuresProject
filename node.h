@@ -1,28 +1,24 @@
 #ifndef NODE_H
 #define NODE_H
 
+#include <vector>
 #include <string>
-
 
 using namespace std;
 
-class Node {
-    private:
-    string question;
-    Node* left;
-    Node* right;
-    
+class Node{
+private:
+  vector<string>* doencas; // VETOR DE DOENÇAS
+  Node* left; // NAO
+  Node* right; // SIM
 public:
-    Node(string question);
-
-    string getQuestion();
-    Node* getLeft();
-    Node* getRight();
-
-    void setQuestion(string question);
-    void setLeft(Node* left);
-    void setRight(Node* right);
+  Node(Node* left, Node* right);
+  ~Node();
+  Node* getLeft();
+  Node* getRight();
+  vector<string>* getDoencas();
+  void adicionarDoenca(string doenca);
+  void setLeft(Node* left);
+  void setRight(Node* right);
 };
-//#include "node.cpp"
-
-#endif  // NODE_H
+#endif
