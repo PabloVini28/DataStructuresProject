@@ -10,7 +10,7 @@
 using namespace std;
 
 BinaryTree::BinaryTree(){
-  ifstream arquivo("SintomasMenor.txt");
+  ifstream arquivo("SintomasMenor.txt");// Ler o arquivo do Dataset
 
   this->root = new Node(nullptr, nullptr); // Cria a árvore com a raiz setada
 
