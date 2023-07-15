@@ -1,3 +1,0 @@
-# TrabalhoED
-
-dasdasdas
