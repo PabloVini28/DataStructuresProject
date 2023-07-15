@@ -6,7 +6,7 @@
 
 - Pablo Vinícios da S.Araújo
 - [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PabloVini28)
-## Considerações :
+## Considerações : 📝
 
 - Ambos os trabalhos foram desenvolvidos durante a cadeira de Estrutura de Dados, 2* semestre de Engenharia 
   de Computação, na UFC Campus de Quixadá!
