@@ -21,7 +21,6 @@ public:
     int at(int index);
     void shift_left(int value);
     void shift_right(int value);
-    void resize();
     void removeAt(int index);
     void removeAll(int value);
     void print();
