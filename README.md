@@ -14,6 +14,6 @@
     - Na disciplina, foi feito a abordagem de diversas EDs comuns no meio da programação como Listas Sequenciais, 
       Listas Encadeadas, Filas, Pilhas e Árvores Binárias.
 
-    - A Atividade Mãe abrage a manipulação de listas sequenciais e a 
+    - A Atividade Mãe abrage a manipulação de Listas Sequenciais e a 
       Atividade Pai envolve a manipulação de uma Árvore Binária de Decisão!  
     
