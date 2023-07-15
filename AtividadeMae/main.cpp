@@ -3,13 +3,6 @@
 
 using namespace std;
 
-// DUPLA :
-// ALUNO : PABLO VINICIOS DA SILVA ARAUJO || MATRÍCULA : 538616
-// ALUNO : DAVID SILVA FERNANDES DE OLIVEIRA || MATRÍCULA : 539402
-// PROFESSOR : FÁBIO CARLOS SOUSA
-
-// OBS : USAMOS SUA MAIN, PROFESSOR, COMO BASE PARA FAZER A NOSSA E TESTAR AS FUNÇÕES.
-
 int main()
 {
 	// Em primeiro plano, começamos adotando um tamanho para as listas, par e ímpar, e
