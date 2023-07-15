@@ -79,12 +79,6 @@ void DoubleVector::push_back(int value)
         m_tail++;
         m_size++;
     }
-    else if(m_size == m_capacity){             // E caso a lista fique totalmente cheia, usamos o redimensionamento.
-        resize();                              // Com isso, dobramos a capacidade da lista, possibilitando adicionar mais elementos
-        m_list[m_tail] = value;
-        m_tail++;
-        m_size++;;
-    }
 }
 
 int DoubleVector::pop_back()
@@ -128,13 +122,7 @@ void DoubleVector::push_front(int value)
         m_list[m_head] = value;                 // Após o deslocamento, adiciona-se o novo valor.
         m_head--;
     }
-    else if(m_size == m_capacity)               //Caso a lista esteja cheia, é feito um redimensionamento
-    {                                           //Após isso um valor pode adicionado.
-        resize();
-        m_list[m_head] = value;
-        m_head--;
-        m_size++;
-    }
+    
 }
 
 void DoubleVector::shift_right(int value)
@@ -156,6 +144,7 @@ void DoubleVector::shift_right(int value)
 
 void DoubleVector::shift_left(int value)
 {
+    cout << "1" << endl;
     int aux = value;                             //Analogamente ao que é feito no shift rigth, o shift vai ter o mesmo comportamento.
     for (int i = 0; i < aux; i++)                //Dessa vez, percorrendo e realocando a esquerda.
     {
@@ -185,33 +174,6 @@ void DoubleVector::printReverse()
         cout << at(i) << " ";
     }
     cout << endl;
-}
-
-void DoubleVector::resize()
-{                                 
-                                 // Aqui ocorrerá o redimensionamento da lista.
-
-    int *aux = new int[m_size];  // Um vetor auxiliar que guardará o tamanho da lista.
-
-    for (int i = 0; i < m_size; i++)
-    {
-        aux[i] = m_list[m_head + 1 + i];  // Preencher o vetor com lista antiga.
-    }
-
-    m_capacity = m_capacity * 2;         // Dobrando a capacidade, obedecendo ao que diz o pdf. Deletando a lista e criando outra com 
-    delete[] m_list;                     // a nova capacidade.
-    m_list = new int[m_capacity];
-
-    m_head = ((m_capacity - m_size) / 2) - 1; //Calculamos e guardamos o valores dos indicies que ficarão em m_head e m_tail.
-    m_tail = (m_head + m_size) + 1;           
-
-    for (int i = 0; i < m_size; i++)
-    {
-        m_list[m_head + i + 1] = aux[i];    //Preenchemos nova lista com os valores guardados na passada.
-    }
-     
-    delete[] aux;                          // Lista auxiliar é deletada.
-    
 }
 
 void DoubleVector::removeAt(int index)
