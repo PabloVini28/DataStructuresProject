@@ -7,7 +7,7 @@ using namespace std;
 
 DoubleVector::DoubleVector()
 {
-    m_capacity = 16;         // Construtor da classe modo default obedecendo aos que fala no pdf da atividade mãe.
+    m_capacity = 16;         // Construtor da classe modo default
     m_size = 0;
     m_head = 7;
     m_tail = m_head + 1;
@@ -115,7 +115,7 @@ int DoubleVector::pop_front(){
 
 void DoubleVector::push_front(int value)
 {
-    if (m_head >= 0)                   // Verifica se há espaço no ladoe esquerdo.
+    if (m_head >= 0)                   // Verifica se há espaço no lado esquerdo.
     {
         m_list[m_head] = value;       // Caso haja, um novo elemento é adicionado na esquerda.
         m_head--;                   
@@ -258,7 +258,7 @@ void DoubleVector::removeAll(int value)
         {
             if (m_list[i] == value)
             {
-                cont++;                          // Essa função gaurda o número de ocorrências do valor o qual o usuário
+                cont++;                          // Essa função guarda o número de ocorrências do valor o qual o usuário
             }                                    // quer remover. Logo em seguida, usa esse valor como contador para remover
         }                                        // o valor, percorrendo a lista e, caso encontre, remova e realoque.
         for (int i = 0; i < cont; i++)
