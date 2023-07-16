@@ -1,7 +1,7 @@
 # TRABALHO I e II de Estrutura de Dados 🖥️
 
 ## Desenvolvedores :  👥
-- David Silva Fernandes
+- David Silva Fernandes de Oliveira
 - [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sfoDavid)
 
 - Pablo Vinícios da S.Araújo
