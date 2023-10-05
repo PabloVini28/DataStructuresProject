@@ -1,4 +1,4 @@
-# TRABALHO I e II de Estrutura de Dados 🖥️
+# Trabalho I e II de Estrutura de Dados 🖥️
 
 ## Desenvolvedores :  👥
 - David Silva Fernandes de Oliveira
