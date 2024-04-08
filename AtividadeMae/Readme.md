@@ -1,23 +1,17 @@
-# ATIVIDADE MÃE 👩
+# PARENT ACTIVITY 👩
 
-    A ATIVIDADE MÃE CONSISTE NA MANIPULAÇÃO DE UMA LISTA SEQUENCIAL DENTRO DE UM VETOR, UMA ESPÉCIE DE 
-    "LISTA DENTRO DE OUTRA LISTA". ELA ABORDA O USO DE DOIS ATRIBUTOS QUE REPRESENTAM A CABEÇA 
-    E A CAUDA DA LISTA, COM ISSO, É POSSÍVEL FAZER ALTERAÇÕES QUE POSSIBILITE QUE HAJA UM CUSTO  
-    COMPUTACIONAL MENOR DO QUE EM UMA LISTA SEQUENCIAL CONVENCIONAL. ALÉM DISSO,  A LÓGICA 
-    IMPLEMENTADA DIZ RESPEITO AO PREENCHIMENTO DA LISTA DENTRO DO VETOR, CASO UMA DAS
-    EXTREMIDADES(ESQUERDA/DIREITA) FIQUE LOTADA, É FEITO UM REDIMENSIONAMENTO (SHIFT), 
-    MANIPULANDO SEMPRE A CABEÇA  E A CAUDA, PARA QUE HAJA O PREENCHIMENTO COMPLETO.
+The PARENT ACTIVITY involves manipulation of a SEQUENTIAL LIST INSIDE AN ARRAY, a kind of "LIST WITHIN ANOTHER LIST". It addresses the use of two attributes representing the HEAD and the TAIL of the list. With this, it is possible to make changes that allow for a lower computational cost than in a conventional sequential list. Furthermore, the implemented logic concerns the filling of the list inside the array. If one of the ends (LEFT/RIGHT) becomes full, a resizing (SHIFT) is performed, always manipulating the HEAD and the TAIL to ensure complete filling.
 
-    
-## COMO EXECUTAR A ATIVIDADE MÃE - 🚀
-### PASSO 1 -
+## HOW TO EXECUTE THE PARENT ACTIVITY - 🚀
+### STEP 1 -
 
-- FAÇA O DOWNLOAD DE TODOS OS CÓDIGOS-FONTE E BIBLIOTECAS.
-- ORGANIZE EM UMA PASTA E ABRA EM UMA ÁREA ONDE SEJA POSSÍVEL RODAR CÓDIGO C++.
-### PASSO 2 -
+- DOWNLOAD ALL SOURCE CODES AND LIBRARIES.
+- ORGANIZE THEM IN A FOLDER AND OPEN IN AN AREA WHERE YOU CAN RUN C++ CODE.
+### STEP 2 -
 
-- ABRA O TERMINAL E COMPILE TODOS OS CÓDIGOS-FONTE E BIBLIOTECAS.
-- USE ESSE COMO EXEMPLO : "g++ main.cpp doublevector.cpp doublevector.h -o exe".
+- OPEN THE TERMINAL AND COMPILE ALL SOURCE CODES AND LIBRARIES.
+- USE THIS AS AN EXAMPLE: "g++ main.cpp doublevector.cpp doublevector.h -o exe".
+
     
     
     
