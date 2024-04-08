@@ -1,19 +1,18 @@
-# Trabalho I e II de Estrutura de Dados 🖥️
 
-## Desenvolvedores :  👥
-- David Silva Fernandes de Oliveira
-- [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sfoDavid)
+# Data Structures Assignment I and II 🖥️
+## Developers: 👥
 
-- Pablo Vinícios da S.Araújo
-- [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PabloVini28)
-## Considerações : 📝
-
-- Ambos os trabalhos foram desenvolvidos durante a cadeira de Estrutura de Dados, 2* semestre de Engenharia 
-  de Computação, na UFC Campus de Quixadá!
-
-- Na disciplina, foi feito a abordagem de diversas EDs comuns no meio da programação como Listas Sequenciais, 
-  Listas Encadeadas, Filas, Pilhas e Árvores Binárias.
+  - Pablo Vinícios da S.Araújo
+  - [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PabloVini28)
   
-- A Atividade Mãe abrage a manipulação de Listas Sequenciais e a 
-  Atividade Pai envolve a manipulação de uma Árvore Binária de Decisão!  
+  - David Silva Fernandes de Oliveira
+  - [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sfoDavid)
+
+
+## Remarks: 📝
+- Both assignments were developed during the Data Structures course, 2nd semester of Computer Engineering, at UFC Campus de Quixadá!
+
+- Throughout the course, various common data structures in programming were covered such as Sequential Lists, Linked Lists, Queues, Stacks, and Binary Trees.
+
+- The Parent Activity covers manipulation of Sequential Lists, and the Child Activity involves manipulation of a Binary Decision Tree!
     
